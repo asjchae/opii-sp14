@@ -1,4 +1,16 @@
 extends layout
 
 block content
-  p Hello.
+
+  each story, i in list
+    p Name:
+      | #{story.name}
+      br
+    p Story:
+      | #{story.story}
+      br
+    p Elements:
+      | #{story.elements}
+      br
+    br
+    br

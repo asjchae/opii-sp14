@@ -2,22 +2,22 @@ extends layout
 
 block content
   div.jumbotron.addstory
-    form.form-horizontal
+    form.form-horizontal(action='/post-curriculum', method='post', id='addcurriculum')
         fieldset
             legend Share your curriculum.
             br
             .form-group
               label.col-lg-2.control-label(for='inputName') Name
               .col-lg-10
-                input#inputName.form-control(type='text', placeholder='Name')
+                input#inputName.form-control(type='text', name='name', placeholder='Name')
             .form-group
               label.col-lg-2.control-label(for='inputEmail') Email
               .col-lg-10
-                input#inputEmail.form-control(type='text', placeholder='Email')
+                input#inputEmail.form-control(type='text', name='email', placeholder='Email')
             .form-group
               label.col-lg-2.control-label(for='inputCurriculum') Curriculum
               .col-lg-10
-                textarea#inputCurriculum.form-control(rows='8', placeholder='Share your curriculum here')
+                textarea#inputCurriculum.form-control(rows='8', name='curriculum', placeholder='Share your curriculum here')
             .form-group
               label.col-lg-2.control-label Key Elements
               .col-lg-10
@@ -50,4 +50,4 @@ block content
             .form-group
               .col-lg-10.col-lg-offset-2(align='center')
                 button.btn.btn-default.separate Cancel
-                button.btn.btn-primary(type='submit').separate Submit
+                button.btn.btn-primary(type='submit' ).separate Submit

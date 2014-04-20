@@ -2,22 +2,22 @@ extends layout
 
 block content
   div.jumbotron.addstory
-    form.form-horizontal
+    form.form-horizontal(action='/post-story', method='post', id='addstory')
         fieldset
             legend Tell us your K12 story.
             br
             .form-group
               label.col-lg-2.control-label(for='inputName') Name
               .col-lg-10
-                input#inputName.form-control(type='text', placeholder='Name')
+                input#inputName.form-control(type='text', name='name', placeholder='Name')
             .form-group
               label.col-lg-2.control-label(for='inputEmail') Email
               .col-lg-10
-                input#inputEmail.form-control(type='text', placeholder='Email')
+                input#inputEmail.form-control(type='text', name='email', placeholder='Email')
             .form-group
               label.col-lg-2.control-label(for='inputStory') Story
               .col-lg-10
-                textarea#inputStory.form-control(rows='8', placeholder='Share your experience here')
+                textarea#inputStory.form-control(rows='8', name='story', placeholder='Share your experience here')
             .form-group
               label.col-lg-2.control-label Key Elements
               .col-lg-10

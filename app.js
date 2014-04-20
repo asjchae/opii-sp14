@@ -9,8 +9,10 @@ var http = require('http');
 var path = require('path');
 var stories = require('./routes/stories');
 var curriculum = require('./routes/curriculum');
+var mongoose = require('mongoose');
 
 var app = express();
+mongoose.connect(process.env.MONGOLAB_URI || 'localhost/k12olin');
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -33,11 +35,11 @@ app.get('/', routes.index);
 
 app.get('/stories', stories.storyview);
 app.get('/tell-your-story', stories.addstory);
-app.post('/stories', stories.addstorypost);
+app.post('/post-story', stories.addstorypost);
 
 app.get('/curriculum', curriculum.curriculumview);
 app.get('/share-curriculum', curriculum.addcurriculum);
-app.post('/curriculum', curriculum.addcurriculumpost);
+app.post('/post-curriculum', curriculum.addcurriculumpost);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

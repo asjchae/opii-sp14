@@ -1,4 +1,16 @@
 extends layout
 
 block content
-  p Hello.
+
+  each cur, i in list
+    p Name:
+      | #{cur.name}
+      br
+    p Curriculum:
+      | #{cur.curriculum}
+      br
+    p Elements:
+      | #{cur.elements}
+      br
+    br
+    br
