@@ -19,3 +19,24 @@ margin-right:auto;
 margin-left:10px;
 margin-right:10px;
 }
+
+.filter
+{
+margin-left: 25px;
+}
+
+.nameright
+{
+text-align: right;
+margin-right: 20px;
+}
+
+.buttonright
+{
+margin-left: 70%;
+}
+
+.checkboxes
+{
+margin-left: 15px;
+}

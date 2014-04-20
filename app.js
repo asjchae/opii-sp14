@@ -36,10 +36,12 @@ app.get('/', routes.index);
 app.get('/stories', stories.storyview);
 app.get('/tell-your-story', stories.addstory);
 app.post('/post-story', stories.addstorypost);
+app.post('/filterstory', stories.filterstory);
 
 app.get('/curriculum', curriculum.curriculumview);
 app.get('/share-curriculum', curriculum.addcurriculum);
 app.post('/post-curriculum', curriculum.addcurriculumpost);
+app.post('/filtercurriculum', curriculum.filtercurriculum);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

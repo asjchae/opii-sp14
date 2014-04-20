@@ -1,10 +1,12 @@
 var mongoose = require('mongoose');
 
 var curriculum_schema = mongoose.Schema({
+	title: String,
 	name: String,
 	email: String,
 	curriculum: String,
-	elements: Array
+	elements: Array,
+	date: Date
 
 });
 
