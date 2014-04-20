@@ -1,0 +1,49 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/boostrap.min.css')
+    script(src='http://code.jquery.com/jquery.js')
+    script(src='/javascripts/dropdown.js')
+  body
+    h1 K12 @ Olin College
+    br
+    .navbar.navbar-inverse
+      .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') Home
+        .navbar-collapse.collapse.navbar-responsive-collapse
+          ul.nav.navbar-nav
+            li
+              a(href='/stories') Stories
+            li
+              a(href='/curriculum') Curriculum
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                | Contribute
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='/tell-your-story') Tell Your Story
+                li
+                  a(href='/share-curriculum') Share Curriculum
+          ul.nav.navbar-nav.navbar-right
+            li.dropdown
+              a.dropdown-toggle(href='#', data-toggle='dropdown')
+                | About
+                b.caret
+              ul.dropdown-menu
+                li
+                  a(href='#') The K12 Project
+                li
+                  a(href='#') Olin College
+                li
+                  a(href='#') The Team
+            li
+              a(href='#') Contact
+
+    block content
