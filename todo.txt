@@ -3,7 +3,7 @@ Technical things:
 
 - Move the database over from mongoose to mongojs
 - Handle multimedia uploads
-- Implement password protection and admin control
+- Implement password protection
 - Allow for seamless and functional filtering
 
 Content decisions:
@@ -20,3 +20,4 @@ Nitpicky features:
 Things to consider:
 - Tags
 - Integrating social media
+- What kind of admin control do we want?
