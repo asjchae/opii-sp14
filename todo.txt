@@ -20,4 +20,5 @@ Nitpicky features:
 Things to consider:
 - Tags
 - Integrating social media
+- Pinterest thumbnails
 - What kind of admin control do we want?
