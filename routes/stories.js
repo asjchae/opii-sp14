@@ -29,13 +29,43 @@ exports.addstorypost = function (req, res) {
 
 };
 
-exports.filterstory = function (req, res) {
-	var storFilter = Story.find({elements:req.body.elementfilter}).sort({date: -1}).exec(function (err, response) {
+// exports.filterstory = function (req, res) {
+// 	var storFilter = Story.find({elements:req.body.elementfilter}).sort({date: -1}).exec(function (err, response) {
+// 		if (err) {
+// 			console.log("Error filtering stories", err);
+// 		} else {
+// 			var stories = response;
+// 			res.render('storyview', {title: 'Stories', list: stories});
+// 		}
+// 	});
+// };
+
+exports.filterstory = function(req, res){
+	var storFilter = [];
+	var filterList = req.body.elementfilter;
+	console.log(filterList);
+	var allStories = Story.find({}).sort({date: -1}).exec(function (err, response) {
 		if (err) {
-			console.log("Error filtering stories", err);
+			console.log("Error finding story in database", err);
 		} else {
+			for (var i=0; i<response.length; i++) {
+				if response[i].elements
+			}
+
+
+		
 			var stories = response;
 			res.render('storyview', {title: 'Stories', list: stories});
 		}
 	});
 };
+
+for each of the things in filterList
+
+if that thing is in the list for each of the things in the list
+
+	save it
+
+if not
+
+	screw it
