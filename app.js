@@ -35,7 +35,7 @@ app.get('/', routes.index);
 app.get('/experiences', experience.experienceView);
 app.get('/share-experience', experience.addExperience);
 app.post('/post-experience', experience.addExperiencePost);
-app.post('/filter-experience', experience.filterExperiences);
+app.post('/experiences', experience.filterExperiences);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
