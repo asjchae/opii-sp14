@@ -7,8 +7,7 @@ var express = require('express');
 var routes = require('./routes');
 var http = require('http');
 var path = require('path');
-var stories = require('./routes/stories');
-var curriculum = require('./routes/curriculum');
+var experience = require('./routes/experience');
 var mongoose = require('mongoose');
 
 var app = express();
@@ -33,15 +32,10 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 
-app.get('/stories', stories.storyview);
-app.get('/tell-your-story', stories.addstory);
-app.post('/post-story', stories.addstorypost);
-app.post('/filterstory', stories.filterstory);
-
-app.get('/curriculum', curriculum.curriculumview);
-app.get('/share-curriculum', curriculum.addcurriculum);
-app.post('/post-curriculum', curriculum.addcurriculumpost);
-app.post('/filtercurriculum', curriculum.filtercurriculum);
+app.get('/experiences', experience.experienceView);
+app.get('/share-experience', experience.addExperience);
+app.post('/post-experience', experience.addExperiencePost);
+app.post('/filter-experience', experience.filterExperiences);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

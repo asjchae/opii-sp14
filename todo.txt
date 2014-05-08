@@ -2,9 +2,7 @@
 
 
 INSIGHTFUL THINKING
-- Word choices for the Contribute part - call them Experiences instead of Stories and Curriculum
 - Allow fields for things like the title, images, names of people involved, stuff (articles, materials, things kids made).
-- Don't separate stories and curriculum so they have to do less work, and let them upload images
 - Better prompts to have people think
 - Allow people to include links to curriculum
 - Put story field and key elements checkboxes side by side
@@ -12,6 +10,7 @@ INSIGHTFUL THINKING
 
 
 MULTIMEDIA
+- let them upload images
 - Media collection of people > not just stories but also being able to see the people in action
 - Photos on the front that match up to the cultural elements when you arrive at the site
 
@@ -36,6 +35,10 @@ LITTLE THINGS
 - Navbar so that you know what page you're on when you're there.
 - Display spaces between the elements in story and curriculum view
 
+
+
+BIG THINGS
+- Move database over from mongoose to mongojs
 
 
 OTHER
