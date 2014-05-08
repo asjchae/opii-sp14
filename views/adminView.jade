@@ -1,0 +1,31 @@
+extends layout
+
+block content
+
+  
+  div.col-lg-8
+    each exp, i in list
+      form
+        div.well
+          h3 #{exp.title}
+          br
+          h5 Experience:
+          p #{exp.experience}
+          br
+          h5 Materials:
+          p #{exp.material}
+          br
+          p <h5>Elements:</h5>
+            | #{exp.elements}
+            br
+          p.nameright <i>Submitted by 
+            | #{exp.name}
+            br
+            | #{exp.email}
+            br
+            | #{exp.date}</i>
+            br
+          input.btn.btn-primary(type='button', class='delExp', value='Delete', id="#{exp._id}")
+        br
+        br
+

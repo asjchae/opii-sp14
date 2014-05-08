@@ -10,6 +10,7 @@ var path = require('path');
 var experience = require('./routes/experience');
 var mongoose = require('mongoose');
 var staticpages = require('./routes/staticpages');
+var admin = require('./routes/admin');
 
 var app = express();
 mongoose.connect(process.env.MONGOLAB_URI || 'localhost/k12olin');
@@ -38,6 +39,9 @@ app.get('/experiences', experience.experienceView);
 app.get('/share-experience', experience.addExperience);
 app.post('/post-experience', experience.addExperiencePost);
 app.post('/experiences', experience.filterExperiences);
+
+app.get('/admin-view', admin.adminView);
+app.post('/deleteExp', admin.deleteExp);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
