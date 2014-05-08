@@ -9,6 +9,7 @@ var http = require('http');
 var path = require('path');
 var experience = require('./routes/experience');
 var mongoose = require('mongoose');
+var staticpages = require('./routes/static');
 
 var app = express();
 mongoose.connect(process.env.MONGOLAB_URI || 'localhost/k12olin');
@@ -31,6 +32,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
+app.get('/about-olin-college', staticpages.aboutOlin);
 
 app.get('/experiences', experience.experienceView);
 app.get('/share-experience', experience.addExperience);

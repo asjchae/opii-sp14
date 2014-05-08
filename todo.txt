@@ -6,6 +6,7 @@ INSIGHTFUL THINKING
 
 BUGS
 - Links are currently not live when users submit them
+- Filtering is broken
 
 MULTIMEDIA
 - Let them upload images and other media
@@ -17,19 +18,16 @@ PRIVACY
 POTENTIAL FEATURES
 - Maybe feature most recent entries on the front page?
 - Add tags
-- Allow filtering for experience/stuff
-- Make filtering seamless
 
 LITTLE THINGS
-- Names vs Name
 - Navbar so that you know what page you're on when you're there
 
 CONTENT
 - Add more photos to the home page
+- Fill out the About/Content sections
 
 BIG THINGS
 - Move database over from mongoose to mongojs
-
 
 OTHER
 - Social media
