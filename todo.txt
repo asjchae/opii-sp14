@@ -1,33 +1,22 @@
-∆ D ∆ E ∆ L ∆ T ∆ A ∆
 
+Technical things:
 
-INSIGHTFUL THINKING
-- Better prompts/writing to have people think
+- Move the database over from mongoose to mongojs
+- Handle multimedia uploads
+- Implement password protection and admin control
+- Allow for seamless and functional filtering
 
-BUGS
-- Links are currently not live when users submit them
-- Filtering is broken
+Content decisions:
 
-MULTIMEDIA
-- Let them upload images and other media
-
-PRIVACY
-- Password protect EVERYTHING and email (insert person here) every time someone submits
-- Who has the ability to contribute? Password protect it
-
-POTENTIAL FEATURES
-- Maybe feature most recent entries on the front page?
-- Add tags
-
-LITTLE THINGS
-- Navbar so that you know what page you're on when you're there
-
-CONTENT
+- Edit the about/contact sections
 - Add more photos to the home page
-- Fill out the About/Content sections
+- Think of more meaningful prompts
+- Feature recent posts on home page
 
-BIG THINGS
-- Move database over from mongoose to mongojs
+Nitpicky features:
 
-OTHER
-- Social media
+- Highlighting on the navbar to indicate page
+
+Things to consider:
+- Tags
+- Integrating social media
