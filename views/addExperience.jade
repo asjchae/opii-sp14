@@ -1,0 +1,63 @@
+extends layout
+
+block content
+  div.jumbotron.addstory
+    form.form-horizontal(action='/post-experience', method='post', id='addexperience')
+        fieldset
+            legend Share your experience.
+            br
+            .form-group
+              label.col-lg-2.control-label(for='inputName') Name
+              .col-lg-10
+                input#inputName.shortForm(type='text', name='name', placeholder='Name(s)')
+            .form-group
+              label.col-lg-2.control-label(for='inputEmail') Email
+              .col-lg-10
+                input#inputEmail.shortForm(type='text', name='email', placeholder='Email of Primary Contact')
+            .form-group
+              label.col-lg-2.control-label(for='inputTitle') Title
+              .col-lg-10
+                input#inputTitle.shortForm(type='text', name='title', placeholder='Story Title')
+            .form-group
+              label.col-lg-2.control-label(for='inputExperience') Experience
+              .col-lg-7
+                textarea#inputExperience.form-control(rows='10', name='experience', placeholder='Share your experience here')
+              label.col-lg-2 Key Elements
+              .col-lg-3
+                .checkbox
+                  label
+                    input(type='checkbox', name='element', value=' Motivation')
+                    | Motivation
+                .checkbox
+                  label
+                    input(type='checkbox', name='element', value=' Reflection')
+                    | Reflection
+                .checkbox
+                  label
+                    input(type='checkbox', name='element', value=' Collaboration')
+                    | Collaboration
+                .checkbox
+                  label
+                    input(type='checkbox', name='element', value=' Iteration')
+                    | Iteration
+                .checkbox
+                  label
+                    input(type='checkbox', name='element', value=' Embracing Failure')
+                    | Embracing Failure
+                .checkbox
+                  label
+                    input(type='checkbox', name='element', value=' Inclusion')
+                    | Inclusion
+                    br
+                    br
+            .form-group
+              label.col-lg-2.control-label(for='inputMaterials') Notes
+              .col-lg-7
+                textarea#inputMaterials.form-control(rows='3', name='material', placeholder='Include any additional information or related external links')
+            .form-group
+              .col-lg-10.col-lg-offset-2(align='center')
+                br
+                br
+                button.btn.btn-success(type='submit' ).separate Submit
+                button.btn.btn-default.separate Cancel
+                

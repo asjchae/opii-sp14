@@ -4,11 +4,20 @@ block content
   .jumbotron
     h2 What makes the Olin approach to education special?
       br
-      p
-        br
-        | We are a team of professors and students at Olin College working to find out how we can identify the core Olin values that make the Olin education experience awesome and then instill those values into the K12 space. Help us figure out what makes Olin special!
+      .col-lg-7
+        p
+          br
+          br
+          | We are a team of professors and students at Olin College working to find out how we can identify the core Olin values that make the Olin education experience awesome, and then instill those values into the K12 space. This website is a prototype for documenting how the Olin community is currently involved with K12. We are interested in hearing your stories and learning about your resources. Help us figure out what makes Olin special and how we can continue to share that with the younger generations!
+          br
+          br
+          .col-lg-7.col-lg-offset-2(align='center')
+            form(action='/experiences', method='get')
+              button.btn.btn-default.btn-lg(type='submit') Check out the experiences we've had so far.
+            br
+      img.homePic(src="images/edisco.jpg")
   div.col-lg-4
-    .panel.panel-primary
+    .panel.panel-success
       .panel-heading
         h3.panel-title Motivation
       .panel-body
@@ -20,7 +29,7 @@ block content
       .panel-body
         | Students who take the time to think back on their actions can extract more learning and actively become better learners. How can we help students use their previous experiences to shape the way they approach activities in the future?
   div.col-lg-4
-    .panel.panel-primary
+    .panel.panel-success
       .panel-heading
         h3.panel-title Collaboration
       .panel-body
@@ -32,7 +41,7 @@ block content
       .panel-body
         | Very few ideas are perfect on the first try. How do we help students learn how to use testing and feedback to iteratively improve their ideas?
   div.col-lg-4
-    .panel.panel-primary
+    .panel.panel-success
       .panel-heading
         h3.panel-title Embracing Failure
       .panel-body

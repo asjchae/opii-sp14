@@ -101,3 +101,12 @@ transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s
 }
 
 .matForm:focus{border-color:#66afe9;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6);box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(102,175,233,0.6)}.matForm::-moz-placeholder{color:#999999;opacity:1}.matForm:-ms-input-placeholder{color:#999999}.matForm::-webkit-input-placeholder{color:#999999}.matForm[disabled],.matForm[readonly],fieldset[disabled] .matForm{cursor:not-allowed;background-color:#eeeeee;opacity:1}textarea.matForm{height:auto}input[type="search"]{-webkit-appearance:none}input[type="date"]{line-height:39px}
+
+
+.homePic {
+max-width: 100%;
+height: auto;
+margin-right: auto;
+margin-left: auto;
+display: block;
+}

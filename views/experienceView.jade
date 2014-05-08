@@ -1,0 +1,59 @@
+extends layout
+
+block content
+
+  div.col-lg-3.filter.separate
+    div.panel.panel-success
+      .panel-heading
+          h3.panel-title Filter by Element
+        .panel-body
+          form(action='/experiences', method='post', id='filterexp')
+            div.checkboxes
+              .checkbox
+                label
+                  input(type='checkbox', name='elementfilter', value=' Motivation')
+                  | Motivation
+              .checkbox
+                label
+                  input(type='checkbox', name='elementfilter', value=' Reflection')
+                  | Reflection
+              .checkbox
+                label
+                  input(type='checkbox', name='elementfilter', value=' Collaboration')
+                  | Collaboration
+              .checkbox
+                label
+                  input(type='checkbox', name='elementfilter', value=' Iteration')
+                  | Iteration
+              .checkbox
+                label
+                  input(type='checkbox', name='elementfilter', value=' Embracing Failure')
+                  | Embracing Failure
+              .checkbox
+                label
+                  input(type='checkbox', name='elementfilter', value=' Inclusion')
+                  | Inclusion
+              button.btn.btn-primary.buttonright(type='submit') Filter
+  
+  div.col-lg-8.separate
+    each exp, i in list
+      div.well
+        h3 #{exp.title}
+        br
+        h5 Experience:
+        p #{exp.experience}
+        br
+        h5 Materials:
+        p #{exp.material}
+        br
+        p <h5>Elements:</h5>
+          | #{exp.elements}
+          br
+        p.nameright <i>Submitted by 
+          | #{exp.name}
+          br
+          | #{exp.date}</i>
+          br
+      br
+      br
+

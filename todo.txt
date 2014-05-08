@@ -2,25 +2,17 @@
 
 
 INSIGHTFUL THINKING
-- Allow fields for things like the title, images, names of people involved, stuff (articles, materials, things kids made).
-- Better prompts to have people think
-- Allow people to include links to curriculum
-- Put story field and key elements checkboxes side by side
+- Better prompts/writing to have people think
 
-
+BUGS
+- Links are currently not live when users submit them
 
 MULTIMEDIA
-- let them upload images
-- Media collection of people > not just stories but also being able to see the people in action
-- Photos on the front that match up to the cultural elements when you arrive at the site
-
-
+- Let them upload images and other media
 
 PRIVACY
 - Password protect EVERYTHING and email (insert person here) every time someone submits
-- Who has the ability to contribute? Password protect it.
-
-
+- Who has the ability to contribute? Password protect it
 
 POTENTIAL FEATURES
 - Maybe feature most recent entries on the front page?
@@ -28,14 +20,12 @@ POTENTIAL FEATURES
 - Allow filtering for experience/stuff
 - Make filtering seamless
 
-
-
 LITTLE THINGS
 - Names vs Name
-- Navbar so that you know what page you're on when you're there.
-- Display spaces between the elements in story and curriculum view
+- Navbar so that you know what page you're on when you're there
 
-
+CONTENT
+- Add more photos to the home page
 
 BIG THINGS
 - Move database over from mongoose to mongojs
