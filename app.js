@@ -9,7 +9,7 @@ var http = require('http');
 var path = require('path');
 var experience = require('./routes/experience');
 var mongoose = require('mongoose');
-var staticpages = require('./routes/static');
+var staticpages = require('./routes/staticpages');
 
 var app = express();
 mongoose.connect(process.env.MONGOLAB_URI || 'localhost/k12olin');
